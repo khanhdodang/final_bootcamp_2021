@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="TestNG Demo 1" >
+        <parameter name="browserName" value="Chrome"></parameter>
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <exclude name="regressiontest"></exclude>-->
+<!--                <include name="ui"></include>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+            <class name="TestCase.TestLogin"/>
+        </classes>
+<!--    </test> <test name="TestNG Demo 2" >-->
+<!--        <parameter name="browserName" value="Firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="TestCase.TestLogin"/>-->
+<!--        </classes>-->
+    </test>
+
+</suite>
