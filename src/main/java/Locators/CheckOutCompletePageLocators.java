@@ -1,5 +1,5 @@
 package Locators;
 
-public class CheckOutCompleteLocators {
+public class CheckOutCompletePageLocators {
     //elements of backHomeButton
 }

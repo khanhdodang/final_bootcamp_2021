@@ -1,6 +1,6 @@
 package Pages;
 
-import Locators.LoginLocators;
+import Locators.LoginPageLocators;
 import Objects.Account;
 import org.openqa.selenium.WebDriver;
 
@@ -16,9 +16,9 @@ public class LoginPage extends BasePage {
       * @param account
      */
     public void login (Account account) {
-        sendKeys(LoginLocators.input_username, account.getUserName());
-        sendKeys(LoginLocators.input_password, account.getPassword());
-        click(LoginLocators.element_login_buttons);
+        sendKeys(LoginPageLocators.input_username, account.getUserName());
+        sendKeys(LoginPageLocators.input_password, account.getPassword());
+        click(LoginPageLocators.element_login_buttons);
     }
 
     /**

@@ -6,20 +6,14 @@
     </listeners>
     <test name="TestNG Demo 1" >
         <parameter name="browserName" value="Chrome"></parameter>
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <exclude name="regressiontest"></exclude>-->
-<!--                <include name="ui"></include>-->
-<!--            </run>-->
-<!--        </groups>-->
         <classes>
-            <class name="TestCase.TestLogin"/>
+            <class name="TestCases.TestLogin"/>
         </classes>
-<!--    </test> <test name="TestNG Demo 2" >-->
-<!--        <parameter name="browserName" value="Firefox"></parameter>-->
-<!--        <classes>-->
-<!--            <class name="TestCase.TestLogin"/>-->
-<!--        </classes>-->
+    </test> <test name="TestNG Demo 2" >
+        <parameter name="browserName" value="Firefox"></parameter>
+        <classes>
+            <class name="TestCases.TestLogin"/>
+        </classes>
     </test>
 
 </suite>

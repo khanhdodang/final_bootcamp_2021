@@ -1,4 +1,4 @@
-package TestCase;
+package TestCases;
 
 import Data.Data;
 import Pages.LoginPage;

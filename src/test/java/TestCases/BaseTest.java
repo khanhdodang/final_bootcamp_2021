@@ -1,4 +1,4 @@
-package TestCase;
+package TestCases;
 
 import Pages.BasePage;
 import org.openqa.selenium.WebDriver;

@@ -9,6 +9,7 @@
         <module name="SeleniumFinalProject" />
         <module name="SeleniumPractice-Saucedemo" />
         <module name="Java-Basic" />
+        <module name="final_bootcamp_2021" />
         <module name="openweathermap" />
       </profile>
     </annotationProcessing>

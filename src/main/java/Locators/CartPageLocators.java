@@ -1,5 +1,5 @@
 package Locators;
 
-public class YourCartLocators {
+public class CartPageLocators {
     //elements of shoppingCartIcon, removeButton, checkOutButton, continueShoppingButton
 }
