@@ -1,4 +1,6 @@
 package Locators;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class ProductPageLocators {
     public static By label_product_name(int index) {
@@ -20,4 +22,6 @@ public class ProductPageLocators {
     public static By button_remove(int index) {
     	return By.xpath("(//div[@class='inventory_item'])[" + index + "]//button[text()='Remove']");
     }
+    public String quantity = driver.findElement(By.xpath("//*[@id='shopping_cart_container']//span")).getText();
+    System.out.println(quantity);
 }
