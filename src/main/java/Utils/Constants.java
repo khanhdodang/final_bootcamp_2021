@@ -7,4 +7,7 @@ public class Constants {
     public static String PASSWORD = "secret_sauce";
     public static int TIMEOUT = 30; //seconds
     public static String ACCOUNT_CSV_FILE = "src/main/resources/accounts.csv";
+    public static String FIRSTNAME = "Ngoc";
+    public static String LASTNAME = "Nguyen";
+    public static String ZIPCODE = "abc123";
 }

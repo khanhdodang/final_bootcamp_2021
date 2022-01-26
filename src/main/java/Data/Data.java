@@ -1,6 +1,7 @@
 package Data;
 
 import Objects.Account;
+import Objects.CheckoutInfo;
 import Utils.Constants;
 import Utils.Utility;
 import java.util.ArrayList;
@@ -8,6 +9,14 @@ import java.util.ArrayList;
 public class Data {
     public static Account defaultAccount () {
         return new Account(Constants.USERNAME, Constants.PASSWORD);
+    }
+
+    /**
+     * Set default information
+     * @return
+     */
+    public static CheckoutInfo defaultInfo() {
+        return new CheckoutInfo(Constants.FIRSTNAME, Constants.LASTNAME, Constants.ZIPCODE);
     }
 
     public static ArrayList<Account> getAccountsCSV(String file, String delimiter) {

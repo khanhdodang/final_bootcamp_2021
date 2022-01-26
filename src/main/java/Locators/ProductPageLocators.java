@@ -1,5 +1,7 @@
 package Locators;
 
+import org.openqa.selenium.By;
+
 public class ProductPageLocators {
     public static By label_product_name(int index) {
     	return By.xpath("(//div[@class='inventory_item'])[" + index + "]//div[@class='inventory_item_name']");
