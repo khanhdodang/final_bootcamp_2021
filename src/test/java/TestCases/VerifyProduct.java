@@ -17,8 +17,6 @@ public class VerifyProduct {
     @Parameters({"browser"})
     @BeforeTest
     public void SetUp(@Optional("chrome") String browser) {
-        System.setProperty("webdriver.chrome.driver", "/Users/doquyen2404/Desktop/Drivers/chromedriver");
-        System.setProperty("webdriver.gecko.driver", "/Users/doquyen2404/Desktop/Drivers/geckodriver");
         BasePage basePage = new BasePage(driver);
         super.Setup(browserName);
         loginPage = new LoginPage(driver);
