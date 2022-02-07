@@ -63,6 +63,7 @@ public class Utility {
 
     /**
      * Format decimal #.00
+     *
      * @param pattern
      * @param number
      * @return

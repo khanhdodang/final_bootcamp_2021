@@ -1,5 +1,6 @@
 package Pages;
 
+import Data.Data;
 import Locators.CheckoutStepTwoPageLocators;
 import Objects.CheckoutOverview;
 import Objects.Product;
@@ -69,6 +70,15 @@ public class CheckoutStepTwoPage extends BasePage {
 
     public void clickCancel() {
         this.click(CheckoutStepTwoPageLocators.button_cancel);
+    }
+
+    public void verify_summary(float total_price) {
+        CheckoutOverview actual = get_checkout_overview();
+        CheckoutOverview expected_checkoutOverview = Data.checkoutOverview();
+        expected_checkoutOverview.setSub_total(expected_checkoutOverview.getSub_total() + total_price);
+        expected_checkoutOverview.setTax(expected_checkoutOverview.getTax() + Utility.formatDecimal("#.00", getTax()));
+        expected_checkoutOverview.setTotal(expected_checkoutOverview.getTotal() + Utility.formatDecimal("#.00", total_price + getTax()));
+        compareCheckoutOverview(actual, expected_checkoutOverview);
     }
 
     public void compareCheckoutOverview(CheckoutOverview actual, CheckoutOverview expected) {

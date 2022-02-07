@@ -1,5 +1,3 @@
-import Data.Data;
-
 import java.text.DecimalFormat;
 
 public class Test {

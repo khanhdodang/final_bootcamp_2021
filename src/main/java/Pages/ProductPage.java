@@ -1,6 +1,5 @@
 package Pages;
 
-import Locators.CheckoutStepTwoPageLocators;
 import Locators.ProductPageLocators;
 import Objects.Product;
 import Utils.Utility;
