@@ -13,15 +13,15 @@ public class CartPage extends BasePage {
     }
 
     public void go_to_cart_page() {
-        this.click(CartPageLocators.icon_cart_badge);
+        click(CartPageLocators.icon_cart_badge);
     }
 
     public void click_checkout() {
-        this.click(CartPageLocators.btn_checkout);
+        click(CartPageLocators.btn_checkout);
     }
 
     public void remove_product(int index) {
-        this.click(CartPageLocators.button_remove(index));
+        click(CartPageLocators.button_remove(index));
     }
 
     public Product getProductInfo(int index) {
