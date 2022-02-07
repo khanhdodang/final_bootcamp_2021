@@ -1,14 +1,16 @@
 package Utils;
 
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.json.simple.JSONObject;
+
 import java.io.*;
 import java.util.ArrayList;
 
 public class Utility {
     /**
      * Get CSV data
+     *
      * @param filePath
      * @return
      */
@@ -30,6 +32,7 @@ public class Utility {
 
     /**
      * Get JSON data
+     *
      * @param filePath
      * @return
      */

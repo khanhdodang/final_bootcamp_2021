@@ -11,13 +11,13 @@ public class BaseTest {
 
 
     @BeforeSuite
-    public void SetUp (String browserName) {
+    public void SetUp(String browserName) {
         basePage = new BasePage(driver);
         driver = basePage.setupDriver(browserName);
-     }
+    }
 
     @AfterSuite
-    public void TearDown () {
+    public void TearDown() {
         driver.quit();
     }
 }

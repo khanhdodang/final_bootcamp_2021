@@ -12,8 +12,8 @@ public class TestLogin extends BaseTest {
 
 
     @BeforeClass
-    @Parameters ({"browserName"})
-    public void SetUp (@Optional("Chrome") String browserName) {
+    @Parameters({"browserName"})
+    public void SetUp(@Optional("Chrome") String browserName) {
         super.SetUp(browserName);
         loginPage = new LoginPage(driver);
     }
@@ -24,10 +24,9 @@ public class TestLogin extends BaseTest {
     }
 
 
-
-    @Test (groups = { "smoketest", "regressiontest" }, priority = 1,
+    @Test(groups = {"smoketest", "regressiontest"}, priority = 1,
             description = "This is a login test case 01")
-    public void verifyLoginSuccess () {
+    public void verifyLoginSuccess() {
         loginPage.get(Constants.URL);
         loginPage.login(Data.defaultAccount());
         String getLoginURL = loginPage.getLoginURL();

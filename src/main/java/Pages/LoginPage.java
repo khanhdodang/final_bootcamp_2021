@@ -13,9 +13,10 @@ public class LoginPage extends BasePage {
 
     /**
      * Login method with account
-      * @param account
+     *
+     * @param account
      */
-    public void login (Account account) {
+    public void login(Account account) {
         sendKeys(LoginPageLocators.input_username, account.getUserName());
         sendKeys(LoginPageLocators.input_password, account.getPassword());
         click(LoginPageLocators.element_login_buttons);
@@ -23,6 +24,7 @@ public class LoginPage extends BasePage {
 
     /**
      * Get Login URL
+     *
      * @return
      */
     public String getLoginURL() {

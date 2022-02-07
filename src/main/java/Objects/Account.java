@@ -2,6 +2,9 @@ package Objects;
 
 public class Account {
 
+    public String userName;
+    public String password;
+
     public Account() {
     }
 
@@ -9,9 +12,6 @@ public class Account {
         this.userName = userName;
         this.password = password;
     }
-
-    public String userName;
-    public String password;
 
     public String getUserName() {
         return userName;

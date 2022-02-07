@@ -12,6 +12,7 @@ public class CheckoutPage extends BasePage {
 
     /**
      * Check out
+     *
      * @param checkoutInfo
      */
     public void checkout(CheckoutInfo checkoutInfo) {
