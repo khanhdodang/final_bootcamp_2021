@@ -17,7 +17,7 @@ public class CheckoutPage extends BasePage {
     public void checkout(CheckoutInfo checkoutInfo) {
         sendKeys(CheckoutStepOnePageLocators.input_firstname, checkoutInfo.getFirstname());
         sendKeys(CheckoutStepOnePageLocators.input_lastname, checkoutInfo.getLastname());
-        sendKeys(CheckoutStepOnePageLocators.input_zipcode, checkoutInfo.getCode());
+        sendKeys(CheckoutStepOnePageLocators.input_zipcode, checkoutInfo.getZipcode());
         click(CheckoutStepOnePageLocators.button_continue);
     }
 

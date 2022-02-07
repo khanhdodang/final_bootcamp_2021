@@ -10,4 +10,5 @@ public class Constants {
     public static String FIRSTNAME = "Ngoc";
     public static String LASTNAME = "Nguyen";
     public static String ZIPCODE = "abc123";
+    public static String DATA_TEST = "/data.json";
 }

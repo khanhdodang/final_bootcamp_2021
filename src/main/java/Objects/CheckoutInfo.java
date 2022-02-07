@@ -1,17 +1,20 @@
 package Objects;
 
+import org.json.simple.JSONObject;
+
 public class CheckoutInfo {
     String firstname;
     String lastname;
-    String code;
+    String zipcode;
 
     public CheckoutInfo() {
+
     }
 
-    public CheckoutInfo(String firstname, String lastname, String code) {
+    public CheckoutInfo(String firstname, String lastname, String zipcode) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.code = code;
+        this.zipcode = zipcode;
     }
 
     public String getFirstname() {
@@ -30,11 +33,23 @@ public class CheckoutInfo {
         this.lastname = lastname;
     }
 
-    public String getCode() {
-        return code;
+    public String getZipcode() {
+        return zipcode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public CheckoutInfo jsonFormat(JSONObject json) {
+        CheckoutInfo checkoutInfo = new CheckoutInfo();
+        checkoutInfo.setFirstname(String.valueOf(json.get("firstname")));
+        checkoutInfo.setLastname(String.valueOf(json.get("lastname")));
+        checkoutInfo.setZipcode(String.valueOf(json.get("zipcode")));
+        return checkoutInfo;
+    }
+
+    public String toString() {
+        return firstname + " " + lastname + " " + zipcode;
     }
 }
