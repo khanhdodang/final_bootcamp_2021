@@ -15,10 +15,10 @@ public class CheckoutStepTwoPage extends BasePage {
 
     public Product getProductInfo(int index) {
         Product product = new Product();
-        product.setName(getText(CheckoutStepTwoPageLocators.lbl_product_name(index)));
-        product.setDesc(getText(CheckoutStepTwoPageLocators.lbl_product_desc(index)));
-        product.setPrice(getText(CheckoutStepTwoPageLocators.lbl_product_price(index)));
-        product.setQuantity(Integer.parseInt(getText(CheckoutStepTwoPageLocators.lbl_product_quantity(index))));
+        product.setName(getText(CheckoutStepTwoPageLocators.label_product_name(index)));
+        product.setDesc(getText(CheckoutStepTwoPageLocators.label_product_desc(index)));
+        product.setPrice(getText(CheckoutStepTwoPageLocators.label_product_price(index)));
+        product.setQuantity(Integer.parseInt(getText(CheckoutStepTwoPageLocators.label_product_quantity(index))));
         return product;
     }
 
@@ -36,11 +36,11 @@ public class CheckoutStepTwoPage extends BasePage {
 
     public CheckoutOverview get_checkout_overview() {
         CheckoutOverview checkoutOverview = new CheckoutOverview();
-        checkoutOverview.setPayment_info(getText(CheckoutStepTwoPageLocators.lable_payment_info));
-        checkoutOverview.setShiping_info(getText(CheckoutStepTwoPageLocators.lable_shipping_info));
-        checkoutOverview.setSub_total(getText(CheckoutStepTwoPageLocators.lable_sub_total));
-        checkoutOverview.setTax(getText(CheckoutStepTwoPageLocators.lable_tax));
-        checkoutOverview.setTotal(getText(CheckoutStepTwoPageLocators.lable_total));
+        checkoutOverview.setPayment_info(getText(CheckoutStepTwoPageLocators.label_payment_info));
+        checkoutOverview.setShiping_info(getText(CheckoutStepTwoPageLocators.label_shipping_info));
+        checkoutOverview.setSub_total(getText(CheckoutStepTwoPageLocators.label_sub_total));
+        checkoutOverview.setTax(getText(CheckoutStepTwoPageLocators.label_tax));
+        checkoutOverview.setTotal(getText(CheckoutStepTwoPageLocators.label_total));
         return checkoutOverview;
     }
 

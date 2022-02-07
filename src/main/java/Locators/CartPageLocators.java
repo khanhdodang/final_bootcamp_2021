@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class CartPageLocators {
     public static By total_product = By.xpath("//div[@class='cart_item']");
     public static By icon_cart_badge = By.id("shopping_cart_container");
-    public static By btn_checkout = By.xpath("//div[@class='cart_footer']/a[text()='CHECKOUT']");
+    public static By btn_checkout = By.id("checkout");
     static String cart_item = "//div[@class='cart_list']//div[@class='cart_item'][";
 
     public static By button_remove(int index) {
