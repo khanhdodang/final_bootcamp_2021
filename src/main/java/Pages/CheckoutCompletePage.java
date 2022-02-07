@@ -9,11 +9,11 @@ public class CheckoutCompletePage extends BasePage {
     }
 
     public String get_header_info() {
-        return getText(CheckOutCompletePageLocators.lable_header);
+        return getText(CheckOutCompletePageLocators.label_header);
     }
 
     public String get_message_info() {
-        return getText(CheckOutCompletePageLocators.lable_message);
+        return getText(CheckOutCompletePageLocators.label_message);
     }
 
     public boolean does_image_show() {

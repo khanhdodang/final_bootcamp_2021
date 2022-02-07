@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 public class CheckoutStepTwoPageLocators {
     public static String cart_item = "//div[@class='cart_list']//div[@class='cart_item'][";
-    public static By button_Cancel = By.xpath("//div[@class='cart_footer']/a[text()='CANCEL']");
-    public static By button_Finish = By.xpath("//div[@class='cart_footer']/a[text()='FINISH']");
+    public static By button_cancel = By.id("cancel");
+    public static By button_finish = By.id("finish");
     public static By label_payment_info = By.xpath("//div[@class='summary_value_label'][1]");
     public static By label_shipping_info = By.xpath("//div[@class='summary_value_label'][2]");
     public static By label_sub_total = By.xpath("//div[@class='summary_subtotal_label']");

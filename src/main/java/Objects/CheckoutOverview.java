@@ -4,7 +4,7 @@ import org.json.simple.JSONObject;
 
 public class CheckoutOverview {
     String payment_info;
-    String shiping_info;
+    String shipping_info;
     String sub_total;
     String tax;
     String total;
@@ -17,12 +17,12 @@ public class CheckoutOverview {
         this.payment_info = payment_info;
     }
 
-    public String getShiping_info() {
-        return shiping_info;
+    public String getShipping_info() {
+        return shipping_info;
     }
 
-    public void setShiping_info(String shiping_info) {
-        this.shiping_info = shiping_info;
+    public void setShipping_info(String shipping_info) {
+        this.shipping_info = shipping_info;
     }
 
     public String getSub_total() {
@@ -52,7 +52,7 @@ public class CheckoutOverview {
     public CheckoutOverview jsonFormat(JSONObject json) {
         CheckoutOverview checkoutOverview = new CheckoutOverview();
         checkoutOverview.setPayment_info(String.valueOf(json.get("payment_info")));
-        checkoutOverview.setShiping_info(String.valueOf(json.get("shiping_info")));
+        checkoutOverview.setShipping_info(String.valueOf(json.get("shipping_info")));
         checkoutOverview.setSub_total(String.valueOf(json.get("sub_total")));
         checkoutOverview.setTax(String.valueOf(json.get("tax")));
         checkoutOverview.setTotal(String.valueOf(json.get("total")));
@@ -60,6 +60,6 @@ public class CheckoutOverview {
     }
 
     public String toString() {
-        return payment_info + " " + shiping_info + " " + sub_total + " " + tax + " " + total;
+        return payment_info + " " + shipping_info + " " + sub_total + " " + tax + " " + total;
     }
 }

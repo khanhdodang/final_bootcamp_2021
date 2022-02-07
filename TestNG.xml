@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" parallel="tests" thread-count="2">
+<suite name="Suite1" verbose="1" parallel="classes" thread-count="3">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     </listeners>
@@ -8,13 +8,8 @@
         <parameter name="browserName" value="Chrome"></parameter>
         <classes>
             <class name="TestCases.TestLogin"/>
+            <class name="TestCases.Verify_Product_01"/>
+            <class name="TestCases.Verify_Product_02"/>
         </classes>
     </test>
-    <test name="TestNG Demo 2">
-        <parameter name="browserName" value="Firefox"></parameter>
-        <classes>
-            <class name="TestCases.TestLogin"/>
-        </classes>
-    </test>
-
 </suite>

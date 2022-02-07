@@ -1,7 +1,9 @@
 package Pages;
 
+import Locators.CheckoutStepTwoPageLocators;
 import Locators.ProductPageLocators;
 import Objects.Product;
+import Utils.Utility;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -38,6 +40,11 @@ public class ProductPage extends BasePage {
 
     int totalProducts() {
         return this.getTotalElements(ProductPageLocators.total_product);
+    }
+
+    public float getPrice(String str) {
+        str = str.replace("$", "");
+        return Utility.parseFloat(str);
     }
 
     public void compareProduct(Product actual, Product expected) {

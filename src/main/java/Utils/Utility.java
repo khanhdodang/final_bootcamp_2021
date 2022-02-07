@@ -5,6 +5,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Utility {
@@ -50,5 +51,24 @@ public class Utility {
             e.printStackTrace();
         }
         return jsonObject;
+    }
+
+    public static float parseFloat(String str) {
+        try {
+            return Float.parseFloat(str);
+        } catch (Exception ex) {
+            return 0f;
+        }
+    }
+
+    /**
+     * Format decimal #.00
+     * @param pattern
+     * @param number
+     * @return
+     */
+    public static String formatDecimal(String pattern, float number) {
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+        return decimalFormat.format(number);
     }
 }

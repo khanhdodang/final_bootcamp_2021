@@ -42,7 +42,7 @@ public class Data {
         JSONArray jsonArray = (JSONArray) jsonObject.get("product");
         for (Object obj : jsonArray) {
             Product product = new Product();
-            products.add(product.jsonFormat((JSONObject) obj));
+            products.add(product.jsonFormat((JSONObject)obj));
         }
         return products;
     }

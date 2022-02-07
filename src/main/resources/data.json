@@ -38,9 +38,9 @@
   },
   "checkout_overview": {
     "payment_info": "SauceCard #31337",
-    "shiping_info": "FREE PONY EXPRESS DELIVERY!",
-    "sub_total": "Item total: $55.97",
-    "tax": "Tax: $4.48",
-    "total": "Total: $60.45"
+    "shipping_info": "FREE PONY EXPRESS DELIVERY!",
+    "sub_total": "Item total: $",
+    "tax": "Tax: $",
+    "total": "Total: $"
   }
 }
