@@ -1,16 +1,12 @@
 package TestCases;
 
 import Data.Data;
-import Objects.Account;
 import Pages.LoginPage;
 import Pages.ProductPage;
 import Utils.Constants;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 public class Verify_Product_01 extends BaseTest {
-    WebDriver driver;
-    Account account = new Account();
     LoginPage loginPage;
 
     @BeforeClass

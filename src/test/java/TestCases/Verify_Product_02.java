@@ -12,8 +12,6 @@ import org.testng.annotations.*;
 import java.util.ArrayList;
 
 public class Verify_Product_02 extends BaseTest {
-    WebDriver driver;
-    Account account = new Account();
     LoginPage loginPage;
 
     @BeforeClass
