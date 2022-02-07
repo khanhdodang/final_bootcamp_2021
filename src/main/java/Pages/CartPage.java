@@ -29,7 +29,7 @@ public class CartPage extends BasePage {
         product.setName(getText(CartPageLocators.label_product_name(index)));
         product.setDesc(getText(CartPageLocators.label_product_desc(index)));
         product.setPrice(getText(CartPageLocators.label_product_price(index)));
-        product.setQuantity(Integer.parseInt(getText(CartPageLocators.label_product_price(index))));
+        product.setQuantity(Integer.parseInt(getText(CartPageLocators.label_product_quantity(index))));
         return product;
     }
 
